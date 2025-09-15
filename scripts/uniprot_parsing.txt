@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH -t 1:00:00
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --mem=24g
+#SBATCH -o %x_%j.out
+#SBATCH -e %x_%j.err
+#SBATCH --mail-type=begin,end,fail
+#SBATCH --mail-user= YOUR EMAIL HERE
+
+
+python uniprot_parsing.py
