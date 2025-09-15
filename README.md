@@ -16,6 +16,7 @@ Usage:
 2. Run the parser with  
 `python scripts/uniprot_parsing.py --input inputs/sample_input.tsv --output outputs/sample_output.csv`  
 3. The script will generate a CSV file with residue-level features extracted from UniProt, including binding sites, motifs, helices, sheets, and other annotated features. Example output format:
+
 | uniprot_id | residue | annotation_type   | description                                                                 |
 |------------|---------|-------------------|-----------------------------------------------------------------------------|
 | Q9NQ94     | 499     | Modified residue  | MOD_RES 499; /note="Phosphothreonine"; /evidence="ECO:0007744\|PubMed:24275569" |
